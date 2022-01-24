@@ -514,6 +514,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 10rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -536,6 +540,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/12 {
   width: 8.333333%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-2\/5 {
+  width: 40%;
 }
 
 .justify-between {
@@ -579,6 +595,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(55 48 163 / 0));
 }
 
+.from-lime-300 {
+  --tw-gradient-from: #bef264;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(190 242 100 / 0));
+}
+
+.to-orange-600 {
+  --tw-gradient-to: #ea580c;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
 .text-center {
   text-align: center;
 }
@@ -588,13 +618,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
 }
 
 .underline {
