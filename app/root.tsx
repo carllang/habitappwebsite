@@ -50,23 +50,37 @@ export const Document: React.FunctionComponent<{ title: string }> = ({
   );
 };
 
+const StyledLink = ({
+  children,
+  to,
+}: {
+  children: React.ReactNode;
+  to: string;
+}) => {
+  return (
+    <Link to={to} className="hover:text-stone-100">
+      {children}
+    </Link>
+  );
+};
+
 // A standard layout that will be the same for each route
 export const Layout: React.FunctionComponent = ({ children }) => {
   return (
     <>
-      <nav className="">
-        <ul className="flex justify-between w-2/4 mx-auto my-8 text-white">
+      <nav>
+        <ul className="flex justify-between w-2/4 mx-auto my-8 text-stone-400">
           <li>
-            <Link to="/">Habit App</Link>
+            <StyledLink to="/">Habit App</StyledLink>
           </li>
           <li>
-            <Link to="/posts">Blog</Link>
+            <StyledLink to="/posts">Blog</StyledLink>
           </li>
           <li>
-            <Link to="/posts">Pricing</Link>
+            <StyledLink to="/posts">Pricing</StyledLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <StyledLink to="/about">About</StyledLink>
           </li>
         </ul>
       </nav>
