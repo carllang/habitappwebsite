@@ -40,7 +40,7 @@ export const Document: React.FunctionComponent<{ title: string }> = ({
         {title ? <title>{title}</title> : null}
         <Links />
       </head>
-      <body className="bg-gradient-to-r from-indigo-800 bg-sky-800">
+      <body className="bg-400 h-screen bg-gradient-to-r from-indigo-800 via-emerald-700 bg-sky-800 animate-gradientanim">
         {children}
 
         {/*Enable live reload in development environment only, not production */}
@@ -58,7 +58,7 @@ const StyledLink = ({
   to: string;
 }) => {
   return (
-    <Link to={to} className="hover:text-stone-100">
+    <Link to={to} className="hover:text-stone-100 ">
       {children}
     </Link>
   );

@@ -498,6 +498,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-2\/4 {
   width: 50%;
 }
@@ -508,6 +512,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-2\/5 {
   width: 40%;
+}
+
+@-webkit-keyframes gradientanim {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradientanim {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradientanim {
+  -webkit-animation: gradientanim 20s ease infinite;
+          animation: gradientanim 20s ease infinite;
 }
 
 .justify-between {
@@ -533,8 +562,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(190 242 100 / 0));
 }
 
+.via-emerald-700 {
+  --tw-gradient-stops: var(--tw-gradient-from), #047857, var(--tw-gradient-to, rgb(4 120 87 / 0));
+}
+
 .to-orange-600 {
   --tw-gradient-to: #ea580c;
+}
+
+.bg-400 {
+  background-size: 400% 400%;
 }
 
 .bg-clip-text {
