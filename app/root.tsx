@@ -69,7 +69,7 @@ export const Layout: React.FunctionComponent = ({ children }) => {
   return (
     <>
       <nav>
-        <ul className="flex justify-between w-2/4 mx-auto my-8 text-stone-400">
+        <ul className="flex justify-between w-2/4 mx-auto my-8 text-stone-200">
           <li>
             <StyledLink to="/">Habit App</StyledLink>
           </li>
